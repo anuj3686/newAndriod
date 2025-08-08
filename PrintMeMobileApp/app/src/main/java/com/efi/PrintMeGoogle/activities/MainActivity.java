@@ -48,8 +48,8 @@ public class MainActivity extends AppCompatActivity {
     private String TAG = "MainActivity";
     @Override
     protected void onCreate(Bundle savedInstanceState) {
-        // Set to true to tell the system that your layout handles insets.
-        WindowCompat.setDecorFitsSystemWindows(getWindow(), true);
+        // Set to false to tell the system that your layout handles insets.
+        WindowCompat.setDecorFitsSystemWindows(getWindow(), false);
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
@@ -58,7 +58,18 @@ public class MainActivity extends AppCompatActivity {
         Window window = getWindow();
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
             window.addFlags(WindowManager.LayoutParams.FLAG_DRAWS_SYSTEM_BAR_BACKGROUNDS);
-            window.setStatusBarColor(ContextCompat.getColor(this, R.color.colorPrimaryDark));
+            window.setStatusBarColor(ContextCompat.getColor(this, android.R.color.transparent));
+            window.setNavigationBarColor(ContextCompat.getColor(this, android.R.color.transparent));
+        }
+        
+        // Make the system bars appear on top of the content
+        WindowInsetsControllerCompat windowInsetsController = 
+            ViewCompat.getWindowInsetsController(getWindow().getDecorView());
+        if (windowInsetsController != null) {
+            // Configure the behavior of the hidden system bars
+            windowInsetsController.setSystemBarsBehavior(
+                WindowInsetsControllerCompat.BEHAVIOR_SHOW_TRANSIENT_BARS_BY_SWIPE
+            );
         }
         Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);

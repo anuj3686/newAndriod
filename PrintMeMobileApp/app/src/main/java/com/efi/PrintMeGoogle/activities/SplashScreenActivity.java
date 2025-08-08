@@ -28,6 +28,11 @@ public class SplashScreenActivity extends AppCompatActivity {
         if (actionBar != null) {
             actionBar.hide();
         }
+        
+        // Enable edge-to-edge display
+        androidx.core.view.WindowCompat.setDecorFitsSystemWindows(getWindow(), false);
+        getWindow().setStatusBarColor(android.graphics.Color.TRANSPARENT);
+        getWindow().setNavigationBarColor(android.graphics.Color.TRANSPARENT);
         boolean isUploading = getUploading();
         if (isUploading == false) {
             File dir = new File(getExternalCacheDir(), "PrintMeTemp");
