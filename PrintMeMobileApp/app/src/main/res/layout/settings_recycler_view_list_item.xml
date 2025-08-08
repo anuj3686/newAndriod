@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:id="@+id/email_layout">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/email_TextView"
+                    android:textSize="16sp"
+                    android:text="EmailAddress"
+                    android:layout_weight="1"
+                    android:textColor="@color/black"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="12dp"
+                    android:layout_marginBottom="12dp"
+
+                    />
+                <LinearLayout
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_alignParentEnd="true"
+                    android:id="@+id/delete_icon_layout">
+                <ImageView
+                    android:layout_width="12dp"
+                    android:layout_height="17dp"
+                    android:id="@+id/delete_icon_imageView"
+                    app:srcCompat="@drawable/ic_mobileapp_delete_icon_disabled"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="12dp"
+                    />
+                </LinearLayout>
+
+        </LinearLayout>
+
+
+
+
+</RelativeLayout>

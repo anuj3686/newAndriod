@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/progress"
+        android:orientation="horizontal"
+        android:padding="13dp"
+        android:gravity="center"
+        android:visibility="visible"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <ProgressBar
+        android:id="@+id/loader"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="5dp" />
+
+    <TextView
+        android:id="@+id/update_msg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_toEndOf="@+id/loader"
+        android:text="@string/fetchingDetails"
+        android:textAppearance="?android:textAppearanceSmall"
+        android:textSize="15sp" />
+    </LinearLayout>
+    <ScrollView
+        android:id="@+id/ScrollView01"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#00FFFFFF"
+        android:id="@+id/barcode_layout"
+        android:visibility="gone">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/docId"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="130dp"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="match_parent"
+                android:layout_height="125sp"
+                android:layout_below="@+id/docId"
+                android:layout_centerHorizontal="true"
+                android:contentDescription="TODO"
+                android:gravity="center"
+                android:paddingTop="20dp" />
+
+            <LinearLayout
+                android:id="@+id/fileNameLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/imageView"
+                android:layout_marginTop="40dp"
+                android:orientation="horizontal"
+                android:paddingHorizontal="60dp">
+
+                <TextView
+                    android:id="@+id/fileNamePlaceholder"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/fileNames"
+                    android:textColor="@color/black"
+                    android:textFontWeight="150"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/fileName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="19dp"
+                    android:text=":"
+                    android:textColor="@color/black"
+                    android:textFontWeight="150"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/filename"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:textColor="@color/black"
+                    android:textSize="16sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/uploadAtLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/fileNameLayout"
+                android:orientation="horizontal"
+                android:paddingHorizontal="60dp">
+
+                <TextView
+                    android:id="@+id/uploadedPlaceholder"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/uploadedAt"
+                    android:textColor="@color/black"
+                    android:textFontWeight="150"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="19dp"
+                    android:text=":"
+                    android:textColor="@color/black"
+                    android:textFontWeight="150"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/uploadedAt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20sp"
+                    android:textColor="@color/black"
+                    android:textSize="16sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/expiresLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/uploadAtLayout"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="20dp"
+                android:orientation="horizontal"
+                android:paddingHorizontal="60dp">
+
+                <TextView
+                    android:id="@+id/expiresPlaceholder"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/expiresIn"
+                    android:textColor="@color/black"
+                    android:textFontWeight="150"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="19dp"
+                    android:text=":"
+                    android:textColor="@color/black"
+                    android:textFontWeight="150"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/expiresIn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:textColor="@color/black"
+                    android:textSize="16sp" />
+
+            </LinearLayout>
+
+
+            <ImageView
+                android:id="@+id/close_btn"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_gravity="end|top"
+                android:layout_marginTop="?attr/actionBarSize"
+                android:layout_marginEnd="6dp"
+                app:srcCompat="@drawable/ic_clear_black_24dp" />
+        </RelativeLayout>
+    </RelativeLayout>
+</ScrollView>
+</RelativeLayout>

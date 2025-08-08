@@ -1,0 +1,69 @@
+<resources>
+    <string name="app_name">PrintMe</string>
+    <string name="secure_printing">Impression sécurisée et pratique</string>
+    <string name="send_to_print">Envoyer à PrintMe</string>
+    <string name="uploading">Chargement...</string>
+    <string name="please_wait">Veuillez patienter</string>
+    <string name="registration">Enregistrer une adresse e-mail</string>
+    <string name="registrationInstructions">Imprimez vos documents et photos sur les imprimantes publiques à proximité.</string>
+    <string name="addEmail">Ajouter une adresse e-mail</string>
+    <string name="email">E-mail</string>
+    <string name="emailExist">L\'adresse existe déjà. Veuillez recommencer.</string>
+    <string name="verification">Code de Vérification</string>
+    <string name="next">Suivant</string>
+    <string name="verificationInstruction">Nous vous avons envoyé un code de vérification par e-mail.</string>
+    <string name="ok">OK</string>
+    <!--    missing-->
+    <string name="files">Fichiers</string>
+    <string name="pullToRefresh">Faites glisser pour actualiser</string>
+    <string name="refreshing">Actualisation...</string>
+    <string name="uploadedAt">Téléchargé à</string>
+    <string name="nothingToPrint">Rien à imprimer</string>
+    <string name="noReleaseCodeFirstLine">Ouvrez le fichier à imprimer.</string>
+    <string name="noReleaseCodeSecondLine">Imprimez, partagez ou envoyez le fichier à PrintMe.</string>
+    <string name="noReleaseCodeThirdLine">Votre code d\'approbation sera affiché ici.</string>
+    <string name="fileNames">Nom(s) de fichier </string>
+    <string name="account">Compte</string>
+    <string name="sendResponseByEmail">Envoyer la réponse par e-mail</string>
+    <string name="notification">Notification</string>
+    <string name="sendNotification">Envoyer la notification</string>
+    <string name="about">A propos de</string>
+    <string name="termsOfUse">Conditions d\'utilisation</string>
+    <string name="privacyPolicy">Politique de confidentialité</string>
+    <string name="printServices">Services d\'impression</string>
+    <string name="help">Aide</string>
+    <string name="expiresIn">Expire dans</string>
+    <string name="hour">h</string>
+    <string name="minute">m</string>
+    <string name="uploadSuccessful">Le code d\'approbation %s PrintMe est prêt.</string>
+    <string name="unableProcessDocument">PrintMe n\'a pas pu traiter le document.</string>
+    <string name="printmeRegistration">Pour utiliser PrintMe, veuillez commencer par enregistrer une adresse e-mail.</string>
+    <string name="copyright"><a class='text-nowrap' target='_blank' href='https://product-redirect.efi.com/copyright'>Copyright © 2018 Electronics for Imaging, Inc. Tous droits réservés.</a></string>
+    <string name="partialFail">PrintMe n\'a pas pu traiter %s documents sur %d.</string>
+    <string name="uploading_file">Téléchargement de %s fichiers...</string>
+    <string name="please_wait_while_uploaded"> Veuillez patienter pendant le téléchargement des fichiers</string>
+    <string name="updating">Actualisation…</string>
+    <!--    errors-->
+    <string name="codeNotFound">Impossible de trouver le code. Celui-ci est peut-être incorrect ou il a expiré. Veuillez recommencer ou demander un nouveau code.</string>
+    <string name="noNetwork">La connexion à PrintMe n\'a pas pu être établie. Vérifiez votre connexion réseau et recommencez ou consultez la page de statut PrintMe.</string>
+    <string name="rateLimit">La limite de requêtes est atteinte. Recommencez ultérieurement.</string>
+    <string name="timeout">PrintMe ne répond pas. Veuillez réessayer ou consultez la page de statut PrintMe.</string>
+    <string name="general">PrintMe les services ne sont pas disponibles. Veuillez réessayer plus tard.</string>
+    <string name="invalidEmail">Saisissez une adresse e-mail valide.</string>
+    <string name="invalidCode">Veuillez entrer un code valide.</string>
+    <string name="printErrorAndroid">Choisissez \'Partager\' puis \'Imprimer\' pour envoyer une page Web avec du contenu à PrintMe.</string>
+    <string name="number_of_files">Vous avez sélectionné plus de 10 fichiers. Veuillez revenir en arrière et sélectionner moins de fichiers.</string>
+    <!--//new strings-->
+    <string name="printMeUpload">Téléchargement de PrintMe</string>
+    <string name="uploadInprogress">Téléchargement en cours</string>
+    <string name="uploadCompleted">Téléchargement terminé</string>
+    <string name="uploadFailed">Échec du téléchargement</string>
+    <string name="printmeUploadFailed">Échec du téléchargement de PrintMe</string>
+    <string name="fileSizeError">La taille du document dépasse la limite de téléchargement autorisée.</string>
+    <string name="settings_title">Paramètres</string>
+    <string name="fetchingDetails">Récupération des informations...</string>
+    <string name="location_title">Emplacement</string>
+
+
+
+</resources>

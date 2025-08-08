@@ -1,0 +1,69 @@
+<resources>
+    <string name="app_name">PrintMe</string>
+    <string name="secure_printing">Veilig en handig afdrukken</string>
+    <string name="send_to_print">Verzenden naar PrintMe</string>
+    <string name="uploading">Uploaden...</string>
+    <string name="please_wait">Een ogenblik geduld</string>
+    <string name="registration">E-mailadres registreren</string>
+    <string name="registrationInstructions">Druk uw documenten af naar openbare printers in de buurt.</string>
+    <string name="addEmail">E-mailadres toevoegen</string>
+    <string name="email">E-mail</string>
+    <string name="emailExist">Het adres bestaat al. Probeer het opnieuw.</string>
+    <string name="verification">Verificatiecode</string>
+    <string name="next">Volgende</string>
+    <string name="verificationInstruction">We hebben u een verificatiecode gemaild.</string>
+    <string name="ok">OK</string>
+    <!--    missing-->
+    <string name="files">Bestanden</string>
+    <string name="pullToRefresh">Sleep om te vernieuwen</string>
+    <string name="refreshing">Vernieuwen...</string>
+    <string name="uploadedAt">Geüpload naar</string>
+    <string name="nothingToPrint">Niets om af te drukken</string>
+    <string name="noReleaseCodeFirstLine">Open het bestand dat u wilt afdrukken.</string>
+    <string name="noReleaseCodeSecondLine">Print, deel of verzend het bestand naar PrintMe.</string>
+    <string name="noReleaseCodeThirdLine">Uw releasecode wordt hier weergegeven.</string>
+    <string name="fileNames">Bestandsnaam/-namen </string>
+    <string name="account">Account</string>
+    <string name="sendResponseByEmail">Reactie per e-mail verzenden</string>
+    <string name="notification">Melding</string>
+    <string name="sendNotification">Melding verzenden</string>
+    <string name="about">Info</string>
+    <string name="termsOfUse">Gebruiksrecht</string>
+    <string name="privacyPolicy">Privacybeleid</string>
+    <string name="printServices">Afdrukservices</string>
+    <string name="help">Help</string>
+    <string name="expiresIn">Verloopt over</string>
+    <string name="hour">u</string>
+    <string name="minute">m</string>
+    <string name="uploadSuccessful">PrintMe-releasecode %s is gereed.</string>
+    <string name="unableProcessDocument">PrintMe kan het document niet verwerken.</string>
+    <string name="printmeRegistration">Als u PrintMe wilt gebruiken, registreer dan eerst een e-mailadres.</string>
+    <string name="copyright"><a class='text-nowrap' target='_blank' href='https://product-redirect.efi.com/copyright'>Copyright © 2018 Electronics for Imaging, Inc. Alle rechten voorbehouden.</a></string>
+    <string name="partialFail">PrintMe kan %s van %d documenten niet verwerken.</string>
+    <string name="uploading_file">%s bestanden worden geüpload...</string>
+    <string name="please_wait_while_uploaded"> Wacht tot alle bestanden zijn geüpload</string>
+    <string name="updating">Bijwerken…</string>
+    <!--    errors-->
+    <string name="codeNotFound">De code is niet gevonden, omdat deze onjuist is of is verlopen. Probeer het opnieuw of vraag een nieuwe code aan.</string>
+    <string name="noNetwork">Er kan geen verbinding met PrintMe tot stand worden gebracht. Controleer uw netwerkverbinding en probeer het opnieuw of ga naar de PrintMe-statuspagina.</string>
+    <string name="rateLimit">De aanvragenlimiet is bereikt. Probeer het later opnieuw.</string>
+    <string name="timeout">PrintMe reageert niet. Probeer het opnieuw of ga naar PrintMe-statuspagina.</string>
+    <string name="general">PrintMe services zijn niet beschikbaar. Probeer het later opnieuw.</string>
+    <string name="invalidEmail">Voer een geldig e-mailadres in.</string>
+    <string name="invalidCode">Voer een geldige code in.</string>
+    <string name="printErrorAndroid">Kies Delen en vervolgens Afdrukken om een webpagina met inhoud naar PrintMe te verzenden.</string>
+    <string name="number_of_files">U hebt meer dan 10 bestanden geselecteerd. Ga terug en selecteer minder bestanden.</string>
+    <!--//new strings-->
+    <string name="printMeUpload">PrintMe uploaden</string>
+    <string name="uploadInprogress">Bezig met uploaden</string>
+    <string name="uploadCompleted">Uploaden voltooid</string>
+    <string name="uploadFailed">Uploaden mislukt</string>
+    <string name="printmeUploadFailed">PrintMe uploaden mislukt</string>
+    <string name="fileSizeError">De grootte van het document overschrijdt de uploadlimiet.</string>
+    <string name="settings_title">Instellingen</string>
+    <string name="fetchingDetails">Details ophalen...</string>
+    <string name="location_title">Locatie</string>
+
+
+
+</resources>

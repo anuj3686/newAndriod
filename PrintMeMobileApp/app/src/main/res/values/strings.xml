@@ -1,0 +1,68 @@
+<resources>
+    <string name="app_name">PrintMe</string>
+    <string name="secure_printing">Secure, convenient printing</string>
+    <string name="send_to_print">Send to PrintMe</string>
+    <string name="uploading">Uploading...</string>
+    <string name="please_wait">Please Wait</string>
+    <string name="registration">Register Email Address</string>
+    <string name="registrationInstructions">Print your documents and photos to nearby public printers.</string>
+    <string name="addEmail">Add email address</string>
+    <string name="email">Email</string>
+    <string name="emailExist">Address already exists. Please try again.</string>
+    <string name="verification">Verification Code</string>
+    <string name="next">Next</string>
+    <string name="verificationInstruction">We have emailed you a verification code.</string>
+    <string name="ok">OK</string>
+<!--    missing-->
+    <string name="files">Files</string>
+    <string name="pullToRefresh">Pull to refresh</string>
+    <string name="refreshing">Refreshing…</string>
+    <string name="uploadedAt">Uploaded at</string>
+    <string name="nothingToPrint">Nothing to Print</string>
+    <string name="noReleaseCodeFirstLine">Open the file you want to print.</string>
+    <string name="noReleaseCodeSecondLine">Print, Share or Send the file to PrintMe.</string>
+    <string name="noReleaseCodeThirdLine">Your release code will be displayed here.</string>
+    <string name="fileNames">File Name(s) </string>
+    <string name="account">Account</string>
+    <string name="sendResponseByEmail">Send Response by Email</string>
+    <string name="notification">Notification</string>
+    <string name="sendNotification">Send Notification</string>
+    <string name="about">About</string>
+    <string name="termsOfUse">Terms of Use</string>
+    <string name="privacyPolicy">Privacy Policy</string>
+    <string name="printServices">Print Services</string>
+    <string name="help">Help</string>
+    <string name="expiresIn">Expires in</string>
+    <string name="hour">h</string>
+    <string name="minute">m</string>
+    <string name="uploadSuccessful">PrintMe release code %1$s is ready.</string>
+    <string name="unableProcessDocument">PrintMe was unable to process the document.</string>
+    <string name="printmeRegistration">To use PrintMe, please register an email address first.</string>
+    <string name="copyright"><a class='text-nowrap' target='_blank' href='https://product-redirect.efi.com/copyright'>Copyright © 2018 Electronics For Imaging, Inc. All rights reserved.</a></string>
+    <string name="partialFail">PrintMe was unable to process %s of %d documents.</string>
+    <string name="uploading_file">Uploading %1$s Files...</string>
+    <string name="please_wait_while_uploaded"> Please Wait While All Files Are Uploaded</string>
+    <string name="updating">Updating...</string>
+    <!--    errors-->
+    <string name="codeNotFound">The code could not be found, either because it is incorrect or has expired. Please try again or request a new code.</string>
+    <string name="noNetwork">A connection to PrintMe could not be established. Please check your network connection and try again or visit the PrintMe status page.</string>
+    <string name="rateLimit">The request limit has been reached. Please try again later.</string>
+    <string name="timeout">PrintMe is not responding. Please try again or visit the PrintMe status page.</string>
+    <string name="general">PrintMe services are unavailable. Please try again later.</string>
+    <string name="invalidEmail">Please enter a valid email.</string>
+    <string name="invalidCode">Please enter a valid code.</string>
+    <string name="printErrorAndroid">Choose \'Share\' then \'Print\' to submit a webpage including content to PrintMe.</string>
+    <string name="number_of_files">You have selected more than 10 files. Please go back and select fewer files.</string>
+<!--//new strings-->
+    <string name="printMeUpload">PrintMe Upload</string>
+    <string name="uploadInprogress">Upload in progress</string>
+    <string name="uploadCompleted">Upload completed</string>
+    <string name="uploadFailed">Failed to upload</string>
+    <string name="printmeUploadFailed">PrintMe Upload Failed</string>
+    <string name="fileSizeError">The document\'s size exceeds the upload limit.</string>
+    <string name="settings_title">Settings</string>
+    <string name="fetchingDetails">Fetching details...</string>
+    <string name="location_title">Location</string>
+
+
+</resources>

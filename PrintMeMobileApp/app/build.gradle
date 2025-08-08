@@ -1,0 +1,70 @@
+apply plugin: 'com.android.application'
+
+android {
+
+
+    compileSdk 35
+        defaultConfig {
+        applicationId "com.efi.PrintMeGoogle"
+        minSdk 29
+        targetSdk 35
+        versionCode 60000
+        versionName "6.0.0.0"
+//      multiDexEnabled true
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        vectorDrawables.useSupportLibrary = true
+
+    }
+    signingConfigs {
+        release {
+            storeFile file('C:\\Jitendra projects\\Print me\\Print me Alies\\PrintMe.keystore')
+            storePassword '3f1^ndr01d'
+            keyAlias 'efi-printme'
+            keyPassword '3f1^ndr01d'
+        }
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled true
+            shrinkResources true
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+
+            signingConfig signingConfigs.release
+        }
+
+    }
+
+    namespace 'com.efi.PrintMeGoogle'
+    lint {
+        checkReleaseBuilds false
+        baseline = file("lint-baseline.xml")
+    }
+    /*android {
+        lint {
+            baseline = file("lint-baseline.xml")
+        }
+    }*/
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation 'androidx.appcompat:appcompat:1.7.0-alpha03'
+    implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
+    implementation 'androidx.preference:preference:1.2.1'
+    testImplementation 'junit:junit:4.13.2'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.5'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.1'
+    implementation 'com.google.android.material:material:1.10.0'
+    implementation 'androidx.swiperefreshlayout:swiperefreshlayout:1.1.0'
+    implementation 'androidx.localbroadcastmanager:localbroadcastmanager:1.1.0'
+    //noinspection GradleCompatible
+    implementation 'com.android.support:design:29.0.0'
+    implementation 'com.google.code.gson:gson:2.8.9'
+    implementation 'org.apache.httpcomponents:httpcore:4.4.15'
+    implementation 'com.google.zxing:core:3.2.1'
+    implementation 'com.journeyapps:zxing-android-embedded:4.3.0'
+    implementation("com.squareup.okhttp3:okhttp:4.12.0")
+//    implementation 'com.android.support:multidex:1.0.3'
+//    implementation 'androidx.lifecycle:lifecycle-extensions:2.2.0'
+}
