@@ -56,11 +56,26 @@ public class RegistrationActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        WindowInsetsControllerCompat windowInsetsController = WindowCompat.getInsetsController(getWindow(), getWindow().getDecorView());
+        
+        // Enable edge-to-edge display
+        WindowCompat.setDecorFitsSystemWindows(getWindow(), false);
+        
+        // Set transparent status and navigation bars
+        Window window = getWindow();
+        window.setStatusBarColor(android.graphics.Color.TRANSPARENT);
+        window.setNavigationBarColor(android.graphics.Color.TRANSPARENT);
+        
+        // Configure system bars behavior
+        WindowInsetsControllerCompat windowInsetsController = 
+            WindowCompat.getInsetsController(getWindow(), getWindow().getDecorView());
         if (windowInsetsController != null) {
-            windowInsetsController.setAppearanceLightStatusBars(true); // True for dark icons (light background), false for light icons (dark background)
-            windowInsetsController.setAppearanceLightNavigationBars(true); // Also set navigation bar icons if needed
+            windowInsetsController.setAppearanceLightStatusBars(true); // True for dark icons (light background)
+            windowInsetsController.setAppearanceLightNavigationBars(true); // Also set navigation bar icons
+            windowInsetsController.setSystemBarsBehavior(
+                WindowInsetsControllerCompat.BEHAVIOR_SHOW_TRANSIENT_BARS_BY_SWIPE
+            );
         }
+        
         setContentView(R.layout.activity_registration);
         context = this;
         //////Log.d(TAG, "started");
