@@ -48,18 +48,28 @@ public class MainActivity extends AppCompatActivity {
     private String TAG = "MainActivity";
     @Override
     protected void onCreate(Bundle savedInstanceState) {
-        // Set to true to tell the system that your layout handles insets.
-        WindowCompat.setDecorFitsSystemWindows(getWindow(), true);
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
-
-        // Set the custom status bar color. This is independent of the layout
-        // and sets the background color of the status bar itself.
+        
+        // Enable edge-to-edge display
+        WindowCompat.setDecorFitsSystemWindows(getWindow(), false);
+        
+        // Set transparent status and navigation bars
         Window window = getWindow();
-        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
-            window.addFlags(WindowManager.LayoutParams.FLAG_DRAWS_SYSTEM_BAR_BACKGROUNDS);
-            window.setStatusBarColor(ContextCompat.getColor(this, R.color.colorPrimaryDark));
+        window.setStatusBarColor(android.graphics.Color.TRANSPARENT);
+        window.setNavigationBarColor(android.graphics.Color.TRANSPARENT);
+        
+        // Configure system bars behavior
+        WindowInsetsControllerCompat windowInsetsController = 
+            WindowCompat.getInsetsController(getWindow(), getWindow().getDecorView());
+        if (windowInsetsController != null) {
+            windowInsetsController.setAppearanceLightStatusBars(true); // True for dark icons (light background)
+            windowInsetsController.setAppearanceLightNavigationBars(true); // Also set navigation bar icons
+            windowInsetsController.setSystemBarsBehavior(
+                WindowInsetsControllerCompat.BEHAVIOR_SHOW_TRANSIENT_BARS_BY_SWIPE
+            );
         }
+        
+        setContentView(R.layout.activity_main);
         Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
         actionbar = getSupportActionBar();
